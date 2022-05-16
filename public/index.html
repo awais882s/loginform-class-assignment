@@ -5,17 +5,14 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <!-- <style>
+    <style>
       #loader {
-        height: 20rem;
-        width: 20rem;
-        justify-content: center;
-        align-items: center;
-        margin-left: 30rem;
-        margin-top: 5rem;
-        z-index: 9939393;
+        height: 100vh;
+        width: 100%;
+        z-index: 99999;
+        background: url("loader.gif") fixed no-repeat center;
       }
-    </style> -->
+    </style>
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -25,8 +22,10 @@
     <title>React App</title>
   </head>
   <body onload="myFunc()">
-    <!-- <div class="position-absolute top-50 start-50 translate-middle"></div>
-    <img src="./loader.gif" alt="Loading" id="loader" /> -->
+    <div
+      class="position-absolute top-50 start-50 translate-middle"
+      id="loader"
+    ></div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script>
