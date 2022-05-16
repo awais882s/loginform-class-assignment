@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../pages/index.css";
 
 export const Login = () => {
     const [email, setEmail] = useState("");
@@ -33,21 +34,23 @@ export const Login = () => {
                                                 }}
                                             />
                                         </div>
-                                        <div className="row mb-3">
-                                            <div className="col">
-                                                <input
-                                                    type="password"
-                                                    className="form-control"
-                                                    onChange={(e) => {
-                                                        setPassword(e.target.value);
-                                                    }}
-                                                />
-                                            </div>
+                                    </div>
+
+                                    <div className="row mb-3 mt-2">
+                                        <div className="col">
+                                            <input
+                                                type="Password"
+                                                placeholder="Password"
+                                                className="form-control"
+                                                onChange={(e) => {
+                                                    setPassword(e.target.value);
+                                                }}
+                                            />
                                         </div>
-                                        <div className="row">
-                                            <div className="col">
-                                                <button className="btn btn-primary w-100">login</button>
-                                            </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col">
+                                            <button className="btn btn-primary w-100">login</button>
                                         </div>
                                     </div>
                                 </form>
